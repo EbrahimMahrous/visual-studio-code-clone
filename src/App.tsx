@@ -6,7 +6,7 @@ import { fileTree } from "./data/FileTree";
 function App() {
   return (
     <div className="flex h-screen">
-      <div className="w-64 border-r border-white">
+      <div className="w-64 border-r border-[#ffffff1f]">
         <RecursiveComponent fileTree={fileTree} />
       </div>
       <OpenedFilesBar />
