@@ -5,6 +5,7 @@ import RenderFileIcon from "./RenderFileIcon";
 import {
   setClickedFileAction,
   setOpenedFilesAction,
+  setTapIdToRemoveAction,
 } from "../app/features/fileTreeSlice";
 import type { RootState } from "../app/store";
 
@@ -63,6 +64,10 @@ const OpenedFilesBarTap = ({ file }: IProps) => {
         file.id === activeTapId ? "border-[#cf6ccf]" : "border-transparent"
       }`}
       onClick={onClick}
+      onContextMenu={(e) => {
+        e.preventDefault();
+        dispatch(setTapIdToRemoveAction(file.id));
+      }}
     >
       <RenderFileIcon filename={file.name} />
       <span className="cursor-pointer duration-300 flex justify-center items-center w-fit mx-2 p-1 rounded-md">

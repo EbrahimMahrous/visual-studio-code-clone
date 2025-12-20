@@ -1,18 +1,40 @@
 function FileIcon() {
   return (
     <svg
-      width={"25px"}
-      height={"25px"}
+      width="24px"
+      height="24px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       focusable="false"
       role="img"
-      viewBox="0 0 16 16"
-      fill="#7d8590"
-      xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25V1.75Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688L10.5 1.562Z"></path>
+      <path
+        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"
+        fill="white"
+      />
+      <path d="M14 2v6h6" fill="#f1f5f9" />
+      <path
+        d="M9 13h6M9 17h4"
+        stroke="#94a3b8"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"
+        stroke="#cbd5e1"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 2v6h6"
+        stroke="#cbd5e1"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
-
 export default FileIcon;

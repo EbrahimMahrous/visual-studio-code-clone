@@ -8,9 +8,7 @@ import { fileTree } from "./data/FileTree";
 import WelcomeTaps from "./components/WelcomeTaps";
 
 function App() {
-  const { openedFiles } = useSelector(
-    (state: RootState) => state.tree
-  );
+  const { openedFiles } = useSelector((state: RootState) => state.tree);
 
   return (
     <div className="flex h-screen">
